@@ -1,0 +1,15 @@
+/* 
+ inicializa o sequilize no projeto. deve ser rodado na pasta onde contém seus arquivos de codigos.
+*/
+node_modules/.bin/sequelize init
+/* 
+cria tabelas no banco de dados a partir das configuraçoes do model. 
+esse comando deve ser rodado na pasta acima da pasta model. 
+*/  
+node_modules/.bin/sequelize db:migrate
+/* 
+cria model do banco de dados.
+o model é uma classe que representa um registro no banco de dados, nesse caso o time.
+esse comando deve ser rodado na pasta acima da pasta model. 
+*/
+../node_modules/.bin/sequelize model:generate --name Team --attributes name:string,country:string,cup:string

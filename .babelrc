@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": false,
+        "targets": {
+          "node": true
+        },
+        "debug": false
+      }
+    ]
+  ],
+  "sourceMaps": "inline",
+  "retainLines": true,
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "istanbul",
+          {
+            "exclude": [
+              "test/**"
+            ],
+            "useInlineSourceMaps": false
+          }
+        ]
+      ]
+    }
+  }
+}

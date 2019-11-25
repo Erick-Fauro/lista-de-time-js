@@ -1,0 +1,31 @@
+{
+  "name": "api-soccer-players",
+  "version": "1.0.0",
+  "description": "essa api gerencia jogadores de futebol",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "babel src --out-dir dist/src --source-maps false --copy-files",
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Fauro",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/register": "^7.7.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1"
+  }
+}
